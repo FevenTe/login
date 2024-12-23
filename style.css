@@ -1,0 +1,87 @@
+/* General container styles for both login and signup */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Set a max-width for proper alignment */
+    margin: 50px auto; /* Centers the form on the page */
+    text-align: center;
+}
+
+/* Add margin to prevent overlapping */
+form {
+    margin-top: 20px;
+}
+
+/* Input fields styling */
+input[type="text"], input[type="password"] {
+    width: 100%; /* Ensure full width within the form container */
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    width: 100%; /* Make the submit button span the full width of the form */
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Link styling */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Messages styling */
+.message {
+    color: red;
+    margin-top: 10px;
+}
+/* Success message */
+.success {
+    color: green;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Error message */
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Styling for links (signup/login link) */
+.signup-link, .login-link {
+    margin-top: 20px;
+}
+
+/* Media query to make the form more responsive */
+@media (max-width: 500px) {
+    .container {
+        width: 90%; /* Ensure the form takes up 90% of the screen width on smaller screens */
+    }
+}
